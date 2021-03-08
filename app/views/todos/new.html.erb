@@ -1,0 +1,12 @@
+<h1> Create new todo </h1>
+
+<%= form_with model: @todo do |form| %>
+
+    <%= label_tag(:title, "Title:") %>
+    <%= form.text_field :title %>
+
+    <%= label_tag(:description, "Description:") %>
+    <%= form.text_area :description %>
+    <%= form.submit  "Create"%>
+
+    <% end %>
